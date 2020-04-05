@@ -1,4 +1,5 @@
-**声明:**图标是转载大神们的<br/>
+***声明:图标是转载大神们的***
+<br/>
 **使用说明:**<br/>
 在 Quantumult X 的“配置文件-编辑”中找到[policy]下的策略组字段，并在该策略组的最后一个节点后方加上：
 img-url=https://raw.githubusercontent.com/Tao-bug/quanX/master/IMAGES/images/图标名称.png

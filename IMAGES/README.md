@@ -14,6 +14,6 @@ Default:Direct.png、Proxy.png、Reject.png、Qure.png
 App:
 Area:Singapore.png
 Media:
-Server:
+Server:blink.png、v2aky.png
 other:x1.png、x2.png、x3.png
 PokemonGO:X001.png、X002.png、X003.png

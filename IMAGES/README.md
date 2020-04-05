@@ -7,7 +7,7 @@ static=Hong Kong, 🇭🇰01, img-url=https://raw.githubusercontent.com/Tao-bug/
 注意：此处“img”前的英文逗号和空格以及“Hong_Kong.png”图标名称中的下划短横线和字母大小写
 
 
-**图标名录:**/n/t
+**图标名录:**
 Default:Direct.png、Proxy.png、Reject.png、Qure.png
 App:
 Area:Singapore.png

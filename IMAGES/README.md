@@ -10,9 +10,10 @@ static=Hong Kong, 🇭🇰01, img-url=https://raw.githubusercontent.com/Tao-bug/
 
 **图标名录:**<br/>
 Default:Direct.png、Proxy.png、Reject.png、Qure.png<br/>
-App:QuanX.png<br/>
+App:<br/>
 Area:Singapore.png<br/>
 Media:<br/>
 Server:blink.png、v2aky.png<br/>
 other:x1.png、x2.png、x3.png<br/>
 PokemonGO:X001.png、X002.png、X003.png<br/>
+profile_img_url:QuanX.png<br/>

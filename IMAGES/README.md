@@ -10,7 +10,7 @@ static=Hong Kong, 🇭🇰01, img-url=https://raw.githubusercontent.com/Tao-bug/
 
 **图标名录:**<br/>
 Default:Direct.png、Proxy.png、Reject.png、Qure.png<br/>
-App:<br/>
+App:QuanX.png<br/>
 Area:Singapore.png<br/>
 Media:<br/>
 Server:blink.png、v2aky.png<br/>

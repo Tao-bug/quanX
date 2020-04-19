@@ -1,2 +1,1 @@
-http=music.desperadoj.com:30002, username=Netease Music, password=none, fast-open=false, udp-relay=false, tag=网易云音乐可用
-http=106.52.127.72:19951, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐
+aHR0cD1tdXNpYy5kZXNwZXJhZG9qLmNvbTozMDAwMiwgdXNlcm5hbWU9TmV0ZWFzZSBNdXNpYywgcGFzc3dvcmQ9bm9uZSwgZmFzdC1vcGVuPWZhbHNlLCB1ZHAtcmVsYXk9ZmFsc2UsIHRhZz3nvZHmmJPkupHpn7PkuZDlj6/nlKgKaHR0cD0xMDYuNTIuMTI3LjcyOjE5OTUxLCBvdmVyLXRscz1mYWxzZSwgZmFzdC1vcGVuPWZhbHNlLCB1ZHAtcmVsYXk9ZmFsc2UsIHRhZz3nvZHmmJPkupHpn7PkuZA=

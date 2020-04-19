@@ -1,0 +1,5 @@
+http=a1.ap.fastqvpn.com:29980, username=270310916573102080, password=23512cf1-2e33-43d6-8f0f-10aaba385aff, over-tls=true, tls-verification=true,tls-host=a1.ap.fastqvpn.com, fast-open=false, udp-relay=false, tag=一键连1
+http=a2.ap.fastqvpn.com:29980, username=270310916573102080, password=23512cf1-2e33-43d6-8f0f-10aaba385aff, over-tls=true, tls-verification=true,tls-host=a1.ap.fastqvpn.com, fast-open=false, udp-relay=false, tag=一键连2
+http=a3.ap.fastqvpn.com:29980, username=270310916573102080, password=23512cf1-2e33-43d6-8f0f-10aaba385aff, over-tls=true, tls-verification=true,tls-host=a1.ap.fastqvpn.com, fast-open=false, udp-relay=false, tag=一键连3
+http=a4.ap.fastqvpn.com:29980, username=270310916573102080, password=23512cf1-2e33-43d6-8f0f-10aaba385aff, over-tls=true, tls-verification=true,tls-host=a1.ap.fastqvpn.com, fast-open=false, udp-relay=false, tag=一键连4
+vmess=ap1-hk.sanjijia.club:443, method=chacha20-poly1305, password=23512cf1-2e33-43d6-8f0f-10aaba385aff, obfs-host=ap1-hk.sanjijia.club, obfs=wss, obfs-uri=/ray, fast-open=false, tls-verification=true, udp-relay=false, tag=一键连香港

@@ -17,3 +17,6 @@ Server:blink.png、v2aky.png<br/>
 other:x1.png、x2.png、x3.png<br/>
 PokemonGO:X001.png、X002.png、X003.png<br/>
 profile_img_url:QuanX.png<br/>
+**图标示例:**<br/>
+![示例](https://raw.githubusercontent.com/tao-bug/Images/示例.png)
+

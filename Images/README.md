@@ -14,8 +14,8 @@ App:<br/>
 Area:Singapore.png<br/>
 Media:<br/>
 Server:blink.png、v2aky.png<br/>
-other:x1.png、x2.png、x3.png<br/>
-PokemonGO:X001.png、X002.png、X003.png、zhs.png、yoyu.png、xingmeng.png、touhou.png、thessr.png ted.png、renzhe.png、pudding.png pangci.png、ouer.png、ocean.png Kuai.png、koi.png、DLK1.png、dler.png<br/>
+PokemonGO:X001.png、X002.png、X003.png
+other:x1.png、x2.png、x3.png、zhs.png、yoyu.png、xingmeng.png、touhou.png、thessr.png ted.png、renzhe.png、pudding.png pangci.png、ouer.png、ocean.png Kuai.png、koi.png、DLK1.png、dler.png<br/>
 profile_img_url:QuanX.png<br/>
 **图标示例:**<br/>
 ![示例](https://raw.githubusercontent.com/tao-bug/Images/images/touhou.png)

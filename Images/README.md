@@ -20,3 +20,17 @@ profile_img_url:QuanX.png<br/>
 **图标示例:**<br/>
 ![示例](https://raw.githubusercontent.com/tao-bug/Images/images/touhou.png)
 
+来自orz-3
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-1.png)
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-2.png)
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-3.png)
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-4.png)
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-5.png)
+
+![示例](https://raw.githubusercontent.com/Orz-3/mini/none/2.0-彩蛋.png)
+

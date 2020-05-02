@@ -14,8 +14,8 @@ GitHub: Neurogram-R
 */
 
 const accounts = [
-    ["ipip", "https://tw.ipip.plus/auth/login", "897384405@qq.com", "994112abc"],
-    ["ssrcf", "https://hi.ssrcf.top/auth/login", "897384405@qq.com", "994112abc"]
+    ["IPIP", "https://tw.ipip.plus/auth/login", "897384405@qq.com", "994112abc"],
+    ["cfssr", "https://hi.cfssr.top/auth/login", "897384405@qq.com", "994112abc"]
 ]
 
 const autoLogout = false

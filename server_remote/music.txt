@@ -2,3 +2,4 @@ http=music.desperadoj.com:30003, username=Netease Music, password=none, fast-ope
 http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐可用1
 http=149.248.51.118:19980, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用2(慢)
 http=137.220.215.54:8080, fast-open=false, udp-relay=false,  tag=网易云音乐可用3
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com, fast-open=false, udp-relay=false, tag=网易云音乐可用4

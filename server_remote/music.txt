@@ -1,1 +1,3 @@
-aHR0cD1tdXNpYy5kZXNwZXJhZG9qLmNvbTozMDAwMywgdXNlcm5hbWU9TmV0ZWFzZSBNdXNpYywgcGFzc3dvcmQ9bm9uZSwgZmFzdC1vcGVuPWZhbHNlLCB1ZHAtcmVsYXk9ZmFsc2UsIHRhZz3nvZHmmJPkupHpn7PkuZDlj6/nlKgwCmh0dHA9dGFyb24udG9wOjEwMCwgb3Zlci10bHM9ZmFsc2UsIGZhc3Qtb3Blbj1mYWxzZSwgdWRwLXJlbGF5PWZhbHNlLCB0YWc9572R5piT5LqR6Z+z5LmQ5Y+v55SoMQ==
+http=music.desperadoj.com:30003, username=Netease Music, password=none, fast-open=false, udp-relay=false, tag=网易云音乐可用0
+http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐可用1
+http=149.248.51.118:19980, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用2

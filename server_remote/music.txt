@@ -1,5 +1,2 @@
-http=47.96.134.135:22, overtls=false,fast-open=false,udp-relay=false, tag=网易云音乐可用0
-http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐可用1
-http=149.248.51.118:19980, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用2(慢)
-http=95.179.198.172:19980,overtls=false,fast-open=false,udp-relay=false, tag=网易云音乐可用3
-shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com, fast-open=false, udp-relay=false, tag=网易云音乐可用4
+http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐可用0
+http=149.248.51.118:19980, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用1(慢)

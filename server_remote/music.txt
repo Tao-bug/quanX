@@ -1,2 +1,2 @@
 http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云音乐可用0
-http=149.248.51.118:19980, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用1(慢)
+http=207.148.98.161.ipssh.net:1248, over-tls=false, fast-open=false, udp-relay=false, tag= 网易云音乐可用1

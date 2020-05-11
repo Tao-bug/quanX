@@ -2,4 +2,4 @@ trojan=alicloud1.chunyuan.monster:443, password=900e35a7, over-tls=true, tls-ver
 
 trojan=alicloud2.chunyuan.monster:443, password=68b329da, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=SG2-🇸🇬
 
-vmess=13.250.49.153:9090, method=chacha20-poly1305, password=f8051af0-7811-4d68-125b-ff95deff33fd, tag=SG3-🇸🇬
+vmess=13.250.49.153:9090, method=None, password=f8051af0-7811-4d68-125b-ff95deff33fd, tag=SG3-🇸🇬

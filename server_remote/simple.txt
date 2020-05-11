@@ -1,5 +1,1 @@
-trojan=alicloud1.chunyuan.monster:443, password=900e35a7, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=SG1-🇸🇬
-
-trojan=alicloud2.chunyuan.monster:443, password=68b329da, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=SG2-🇸🇬
-
-vmess=13.250.49.153:9090, method=None, password=f8051af0-7811-4d68-125b-ff95deff33fd, tag=SG3-🇸🇬
+dHJvamFuPWFsaWNsb3VkMS5jaHVueXVhbi5tb25zdGVyOjQ0MywgcGFzc3dvcmQ9OTAwZTM1YTcsIG92ZXItdGxzPXRydWUsIHRscy12ZXJpZmljYXRpb249ZmFsc2UsIGZhc3Qtb3Blbj1mYWxzZSwgdWRwLXJlbGF5PWZhbHNlLCB0YWc9U0cxLfCfh7jwn4esCgp0cm9qYW49YWxpY2xvdWQyLmNodW55dWFuLm1vbnN0ZXI6NDQzLCBwYXNzd29yZD02OGIzMjlkYSwgb3Zlci10bHM9dHJ1ZSwgdGxzLXZlcmlmaWNhdGlvbj10cnVlLCBmYXN0LW9wZW49ZmFsc2UsIHVkcC1yZWxheT1mYWxzZSwgdGFnPVNHMi3wn4e48J+HrAoKdm1lc3M9MTMuMjUwLjQ5LjE1Mzo5MDkwLCBtZXRob2Q9Tm9uZSwgcGFzc3dvcmQ9ZjgwNTFhZjAtNzgxMS00ZDY4LTEyNWItZmY5NWRlZmYzM2ZkLCB0YWc9U0czLfCfh7jwn4es

@@ -30,3 +30,5 @@
 * [@Choler](https://github.com/Choler)
 * [@ConnersHua](https://github.com/ConnersHua)
 * [@NobyDa](https://github.com/NobyDa)
+* [@nzw9314](https://github.com/nzw9314)
+* [@Orz-3](https://github.com/Orz-3)

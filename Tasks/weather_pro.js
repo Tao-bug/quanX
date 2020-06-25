@@ -13,7 +13,7 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `[天气日报] $[city]$[district]  •  $[summary]`,
+            title: `[天气日报] $[summary]`,
             subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
             detail: `🥵空气质量 $[aqi]($[aqiDesc]) 🍃风速$[windSpeed]km/h $[windDir]
 🌞紫外线指数 $[uv]($[uvDesc]) 💧湿度$[currentHumidity]%
@@ -22,7 +22,7 @@ let config = {
 [生活指数]
 $[lifeStyle($[icon][$[brf]]$[txt])]
 
-[天气周报] • $[weeklySummary]
+[天气周报]
 $[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
         },
         lifestyle: { //此处用于显示各项生活指数，可自行调整顺序，顺序越在前面则显示也会靠前，如果您不想查看某一指数，置为false即可，想看置为true即可
@@ -46,7 +46,7 @@ $[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weather
     }
 }
 
-const provider = {
+const    provider = {
     heweather_now: {
         api: `https://free-api.heweather.net/s6/weather/now?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`,
         progress: 0, //处理进度:0需处理1已处理2无需处理9报错
@@ -100,8 +100,41 @@ const provider = {
         support: ['$[aqiIcon]', '$[aqi]', '$[aqiDesc]', '$[aqiWarning]']
     }
 }
+
+
+
+function location(){
+    $task.fetch({
+        url: "http://ip-api.com/json"
+    }).then(response => {
+        try {
+            let darkObj = JSON.parse(response.body);
+
+            if (darkObj.error) {
+                $notify("获取位置", "出错啦", response+darkObj.error);
+            }
+            config.lat_lon = darkObj.lat+","+darkObj.lon;
+            provider.heweather_now.api=`https://free-api.heweather.net/s6/weather/now?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`;
+
+            provider.heweather_daily.api=`https://free-api.heweather.net/s6/weather/forecast?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`;
+
+            provider.heweather_air.api=`https://free-api.heweather.net/s6/air/now?location=auto_ip&key=${config.huweather_apiKey}`;
+
+            provider.heweather_lifestyle.api=`https://free-api.heweather.net/s6/weather/lifestyle?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`;
+
+            provider.darksky.api=`https://api.darksky.net/forecast/${config.darksky_api}/${config.lat_lon.replace(/\s/g, "").replace("，", ",")}?lang=${config.lang}&units=si`;
+            provider.aqicn.api=`https://api.waqi.info/feed/geo:${config.lat_lon.replace(/\s/g, "").replace("，", ",").replace(/,/, ";")}/?token=${config.aqicn_api}`;
+        } catch (e) {
+            console.log(`地理位置获取报错${JSON.stringify(e)}`)
+        }
+    }, reason => {
+        console.log(`地理位置获取报错${JSON.stringify(e)}`)
+    });
+};
+
 // #region 天气数据获取
 function weather() {
+    location();
     support();
     heweatherNow();
     heweatherDaily();
@@ -115,7 +148,7 @@ function darksky() {
     if (provider.darksky.progress == 2) return;
     start("darksky");
     $task.fetch({
-        url: provider.darksky.api
+        url: `https://api.darksky.net/forecast/${config.darksky_api}/${config.lat_lon.replace(/\s/g, "").replace("，", ",")}?lang=${config.lang}&units=si`
     }).then(response => {
         try {
             let darkObj = JSON.parse(response.body);
@@ -141,7 +174,7 @@ function aqicn() {
     if (provider.aqicn.progress == 2) return;
     start("aqicn");
     $task.fetch({
-        url: provider.aqicn.api
+        url: `https://api.waqi.info/feed/geo:${config.lat_lon.replace(/\s/g, "").replace("，", ",").replace(/,/, ";")}/?token=${config.aqicn_api}`
     }).then(response => {
         try {
             var waqiObj = JSON.parse(response.body);
@@ -167,7 +200,7 @@ function aqicn() {
 function heweatherNow() {
     start("heweather_now");
     $task.fetch({
-        url: provider.heweather_now.api
+        url: `https://free-api.heweather.net/s6/weather/now?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`
     }).then(response => {
         try {
             record(`天气数据获取-C1-${response.body}`);
@@ -189,7 +222,7 @@ function heweatherDaily() {
     if (provider.heweather_daily.progress == 2) return;
     start("heweather_daily");
     $task.fetch({
-        url: provider.heweather_daily.api
+        url: `https://free-api.heweather.net/s6/weather/forecast?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`
     }).then(response => {
         try {
             record(`天气数据获取-D1-${response.body}`);
@@ -210,7 +243,7 @@ function heweatherAir() {
     if (provider.heweather_air.progress == 2) return;
     start("heweather_air");
     $task.fetch({
-        url: provider.heweather_air.api
+        url: `https://free-api.heweather.net/s6/air/now?location=auto_ip&key=${config.huweather_apiKey}`
     }).then(response => {
         try {
             record(`天气数据获取F1-${response.body}`);
@@ -242,7 +275,7 @@ function heweatherLifestyle() {
     }
     if (needRequest) {
         $task.fetch({
-            url: provider.heweather_lifestyle.api
+            url: `https://free-api.heweather.net/s6/weather/lifestyle?location=${config.lat_lon.replace(/\s/g, "").replace("，", ",")}&key=${config.huweather_apiKey}`
         }).then(response => {
             try {
                 record(`天气数据获取-E1-${response.body}`);

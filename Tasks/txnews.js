@@ -12,35 +12,6 @@
 版本更新日志:
 1.01 修复无法自动获取视频红包，修改通知为视频红包到账通知间隔，即有红包到账且红包数除以间隔余0时通知，或者自定义常开或常关，
 
----------------------
-Surge 4.0
-[Script]
-腾讯新闻 = type=cron,cronexp=0 8 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js,script-update-interval=0
-
-腾讯新闻 = type=http-request,pattern=https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js, requires-body=true
-
-~~~~~~~~~~~~~~~~~~~~~
-Loon 2.1.0+
-[Script]
-# 本地脚本
-cron "04 00 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js, enabled=true, tag=腾讯新闻
-
-http-request https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js, requires-body=true
-
------------------
-
-QX 1.0.7+ :
- [task_local]
-0 9 * * * txnews2.js, tag=腾讯新闻
- [rewrite_local]
-https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body txnews2.js
-
-~~~~~~~~~~~~~~~~~~
- [MITM]
-hostname = api.inews.qq.com
-
----------------------------
-
 Cookie获取后，请注释掉Cookie地址。
 
 */
@@ -48,9 +19,9 @@ const notifyInterval = 4; //视频红包间隔通知开为1，常关为0
 const logs = 0; // 日志开关
 const cookieName = '腾讯新闻'
 const sy = init()
-const signurlVal = sy.getdata('sy_signurl_txnews2')
-const cookieVal = sy.getdata( 'sy_cookie_txnews2')
-const videoVal = sy.getdata( 'video_txnews2')
+const signurlVal = sy.getdata('sy_signurl_txnews')
+const cookieVal = sy.getdata( 'sy_cookie_txnews')
+const videoVal = sy.getdata( 'video_txnews')
 
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {

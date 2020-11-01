@@ -5,3 +5,5 @@ ssr://MTE3LjI4LjI0My4xNjY6NzkwNDpvcmlnaW46cmM0LW1kNTpwbGFpbjpjR0Z6YzJsdVptOHhNak
 http= a1.ap.fastqvpn.com:29980, username=374674048099024896, password=7a3c255b-57b0-4afa-ab32-6e1d350779f9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=跨
 
 ssr://dmlkZW8xNS5jZG4uZ2xvYmFsbmV0d29ya3RyYWZmaWMuY29tOjcwNDphdXRoX2FlczEyOF9tZDU6YWVzLTI1Ni1jZmI6dGxzMS4yX3RpY2tldF9hdXRoOlpHa3hOVkJXLz9vYmZzcGFyYW09WkRCa01tVTRNREV6TXk1M2QzY3VaMjkyTG1ociZwcm90b3BhcmFtPU9EQXhNek02ZVhKU1ozRlMmcmVtYXJrcz02YWFaNXJpdmJIQnBZMVJIUUdKaGFYQnBZVzlxYVdWa2FXRnUmZ3JvdXA9NXBhdzVZaUc1N3VFSUMwZ2FXTjFabk0
+
+https://Mzc0NTMxOTY3MzE3NzA0NzA0OjBmZmMxYTA3LTg5NDctNDk3YS1hMGYxLTZlZTdiNzAyMWExOUBhMS5hcC5mYXN0cXZwbi5jb206Mjk5ODA?cert=&peer=#%E9%A2%9C%E5%80%BC%E6%8B%85%E5%BD%93

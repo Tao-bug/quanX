@@ -7,7 +7,7 @@
 [rewrite_local]
 
 #酷咪视频VIP无限看
-^https:\/\/lginstaacademy\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body kumiyw.js
+^https:\/\/lginstaacademy\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/|\/\/api\/vip\/index) url script-response-body kumiyw.js
 
 酷咪下载地址
 km.app
@@ -26,6 +26,7 @@ const p3 = '//api/member';
 const p4 = '/api/video_clip/play';
 const p5 = '/api/app/message_list';
 const p6 = '/api/home/index_recommend';
+const p7 = '//api/vip/index';
 
 
 if (url.indexOf(p2) != -1) {
@@ -49,7 +50,10 @@ if (url.indexOf(p5) != -1) {
 } 
 if (url.indexOf(p6) != -1) {
     obj.data.list.ob_game_list = 1;
-
-
 } 
+if (url.indexOf(p7) != -1) {
+    obj.is_vip = 1;
+    obj.expire_time = "2099-09-09";
+    }
+    body = JSON.stringify(obj);
 $done({body});
